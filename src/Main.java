@@ -1,16 +1,21 @@
-import animals.Animal;
-import animals.Gato;
-import animals.Perro;
+
+import humanos.Empleado;
 
 public class Main {
     public static void main(String[] args){
-        Animal animal = new Animal("Drome");
-        Perro perro = new Perro("TObi", "Labrador");
-        Gato gato = new Gato("Salome", "Amarillo");
+        Empleado emple = new Empleado(
+                1,
+                "212",
+                "Mileer",
+                "Leon",
+                "Calle 7",
+                "234564",
+                12,
+                "Desarrollador",
+                5.1);
+        emple.getNum_legajo();
+        System.out.println("Numero de legajo es: " + emple.getNum_legajo());
+        emple.getNombre();
 
-        animal.hacerSonido();
-        animal.mostrarNombre();
-        perro.hacerSonido();
-        gato.hacerSonido();
     }
 }
