@@ -9,7 +9,7 @@ public class Animal {
     }
 
     public void hacerSonido(){
-        System.out.println(this.nombre + "Hace un sonido.");
+        System.out.println(this.nombre + " hace un sonido.");
     }
 
     public void mostrarNombre(){
@@ -20,11 +20,11 @@ public class Animal {
         System.out.println("El animal se está moviendo.");
     }
 
-    public String getName() {
+    public String getNombre() {
         return nombre;
     }
 
-    public void setName(String name) {
+    public void setNombre(String name) {
         this.nombre = name;
     }
 }
