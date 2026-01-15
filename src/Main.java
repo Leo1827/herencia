@@ -1,21 +1,17 @@
 
 import humanos.Empleado;
+import parqueadero.Carro;
+import parqueadero.Moto;
 
 public class Main {
     public static void main(String[] args){
-        Empleado emple = new Empleado(
-                1,
-                "212",
-                "Mileer",
-                "Leon",
-                "Calle 7",
-                "234564",
-                12,
-                "Desarrollador",
-                5.1);
-        emple.getNum_legajo();
-        System.out.println("Numero de legajo es: " + emple.getNum_legajo());
-        emple.getNombre();
+        Carro car = new Carro("Mazda", 4);
+        Moto mot = new Moto("NKD");
 
+        car.acelerar(50); // metodo heredado
+        car.abrirMaletero(); // metodo propio
+        mot.acelerar(35); // metodo heredado
+        mot.hacerCaballito(); // metodo propio
+        mot.frenar(); // metodo heredado
     }
 }
